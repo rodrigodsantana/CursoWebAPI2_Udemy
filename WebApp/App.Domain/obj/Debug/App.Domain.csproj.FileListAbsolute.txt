@@ -1,0 +1,5 @@
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Domain\bin\Debug\App.Domain.dll
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Domain\bin\Debug\App.Domain.pdb
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Domain\obj\Debug\App.Domain.csproj.CoreCompileInputs.cache
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Domain\obj\Debug\App.Domain.dll
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Domain\obj\Debug\App.Domain.pdb

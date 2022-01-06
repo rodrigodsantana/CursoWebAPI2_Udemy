@@ -1,0 +1,9 @@
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Repository\obj\Debug\App.Repository.csprojAssemblyReference.cache
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Repository\obj\Debug\App.Repository.csproj.CoreCompileInputs.cache
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Repository\bin\Debug\App.Repository.dll
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Repository\bin\Debug\App.Repository.pdb
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Repository\bin\Debug\App.Domain.dll
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Repository\bin\Debug\App.Domain.pdb
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Repository\obj\Debug\App.Repository.csproj.CopyComplete
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Repository\obj\Debug\App.Repository.dll
+C:\Users\RODRIGO DUARTE\source\repos\WebApp\App.Repository\obj\Debug\App.Repository.pdb

@@ -1,0 +1,12 @@
+#titulo{
+    display: inline;
+}
+.cabecalhoCadastro{
+    padding-top: 25px;
+}
+.topPage{
+    margin: 50px;
+}
+.dropdown-menu[data-bs-popper]{
+    left: -55px !important;
+}

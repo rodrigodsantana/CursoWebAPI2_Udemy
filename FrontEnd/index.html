@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Acadêmico</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul id="menu" class="navbar-nav me-auto mb-2 mb-md-0">
+                    
+                </ul>
+                <ul id="statusLogin" class="d-flex">
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container topPage">
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cadastrar Aluno</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Nome: </label>
+                            <input class="form-control" type="text" id="nome">
+                        </div>
+                        <div class="form-group">
+                            <label>Sobrenome: </label>
+                            <input class="form-control" type="text" id="sobrenome">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone: </label>
+                            <input class="form-control" type="text" id="telefone">
+                        </div>
+                        <div class="form-group">
+                            <label>RA: </label>
+                            <input class="form-control" type="text" id="ra">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btnSalvar" class="btn btn-success" onclick="Cadastrar()">Cadastrar</button>
+                        <button id="btnCancelar" class="btn btn-light" onclick="Cancelar()">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cabecalhoCadastro">
+            <h2 id="titulo">Cadastrar Aluno</h2>
+            <button type="button" class="btn btn-primary float-end" onclick="novoAluno()">
+                Cadastrar
+            </button>
+        </div>
+
+        <hr>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Nome</td>
+                    <td>Sobrenome</td>
+                    <td>Telefone</td>
+                    <td>RA</td>
+                    <td>Opções</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
+    <script>
+
+        (() => {
+            var statusLogin = document.querySelector('#statusLogin');
+            var menu = document.querySelector('#menu');
+
+            if (sessionStorage.getItem('token') != null) {
+                menu.innerHTML = `<li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Aluno</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Disciplina</a>
+                                    </li>`
+
+                statusLogin.innerHTML = `<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown"
+                aria-expanded="false">${sessionStorage.getItem('username')}</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown04" class="rightDropDown">
+                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Configuração</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#" onclick="logout()">Sair</a></li>
+            </ul>
+        </li>`
+            } else {
+                statusLogin.innerHTML = `<li class="nav-item"> <a class="nav-link active" aria-current="page" href="login.html">Entrar</a></li>`;
+                window.location.href = "login.html";
+            }
+        })()
+
+        function logout(){
+            sessionStorage.removeItem('token');
+            window.location.href = "login.html";
+        }
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootbox.min.js"></script>
+
+</body>
+
+</html>

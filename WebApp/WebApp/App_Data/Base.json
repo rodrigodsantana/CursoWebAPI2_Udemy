@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nome": "Rodrigo",
+    "sobrenome": "Duarte",
+    "telefone": "12 99191 8089",
+    "data": null,
+    "ra": 1
+  },
+  {
+    "id": 2,
+    "nome": "Livia",
+    "sobrenome": "Duarte",
+    "telefone": "12 99294 7070",
+    "data": null,
+    "ra": 2
+  },
+  {
+    "id": 3,
+    "nome": "Camila",
+    "sobrenome": "Duarte",
+    "telefone": "12 99197 9098",
+    "data": null,
+    "ra": 3
+  },
+  {
+    "id": 5,
+    "nome": "Lindinalva Santana",
+    "sobrenome": "Hora",
+    "telefone": "12 3232 5454",
+    "data": null,
+    "ra": 4
+  }
+]
